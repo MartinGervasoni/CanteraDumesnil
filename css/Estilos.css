@@ -1,0 +1,516 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+.header {
+    /* Header */
+position:fixed ;
+width: 100vw;
+height: 96px;
+flex-direction: row;
+display: inline-flex;
+z-index: 99;
+background-color: white;
+}
+.header__logo {
+    /* LOGO DUMESNIL */
+position: relative;
+height: 77.90px;
+width: 300px;
+left: 15px; 
+top: 9px;
+border-radius: 0px;
+animation-name: Logo;
+animation-iteration-count: 1 ;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+animation-delay: 0s;
+}
+
+@keyframes logo {
+
+100% {   }
+
+}
+
+.header__list {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    align-content: center;
+    list-style:none;
+    justify-content: center;
+    left: 100px; 
+    }
+
+header div {display: inline-flex;
+}
+
+header div ul li a {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    height: 21px;
+    color: #43B741;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    margin: 0px 30px;
+    flex-grow: 0;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: font-size 1ms, border 1ms;
+    border: 3px white solid;
+}
+
+header div ul li a:hover {
+    border: 3px black solid;
+    
+ }
+
+
+.grid__padre {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 3fr;  
+    grid-template-areas: "header" "main" "footer";  
+    row-gap: 2rem;
+    }
+    
+    .header {grid-area: header;}
+    .main { grid-area: main; }
+    .footer {grid-area: footer;} 
+
+.header__list__negro {
+    color: black;   
+}
+
+.header__contacto__boton {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    height: 91px;
+    width: 220px;
+    left: 15%;
+    top: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 20px;
+    align-items:center;
+
+}
+
+.header__contacto {
+/* Contactanos */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+/* identical to box height line-height: 21px;*/
+/* CD Principal */
+color: #43B741;   
+text-decoration: none;
+}
+
+.whatsapp__container {
+    left: 93%;
+    background-color: #6bc047;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: 55px;
+    z-index: 11;
+    width: 65px;
+    height: 65px;
+    font-size: 54px;
+    padding-top: 2px;
+   }
+
+.fa-whatsapp {   
+    content: "\f232";
+}
+.fa {
+    display: inline-block;
+    font: normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    }
+
+.imagen1 {
+height: 100vh;
+width: 100%;
+position: relative;
+border-radius: 0px;
+
+}
+
+.main_imagen_parrafo {
+    background-image: url(../Multimedia/CD_Desarrollo-Sostenible.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 538px;
+    left: 0px;
+    top: 300px;
+       }
+
+
+.texto__titulo {
+    /* NUESTRA ACTIVIDAD ES FUNDAMENTAL PARA EL DESARROLLO DE NUSTRAS COMUNIDADES */
+
+position: relative;
+width: 70%;
+height: auto;
+left: 165px;
+top: 80px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 42px;
+display: flex;
+text-align: center;
+color: rgba(0, 0, 0);
+}
+
+.texto__parrafos{
+    display: flex;
+    flex-direction: row;
+    }
+
+body main div div p {
+position: relative;
+width: 30%;
+display: inline;
+height: 112px;
+top: 150px;
+font-family: Roboto;
+font-size: 20px;
+line-height: 28px;
+text-align: justify;
+color: rgba(0, 0, 0);
+}
+
+.texto__parrafo1 {
+    left : 15% ;
+}
+
+.texto__parrafo2 {
+    left : 25% ;
+}
+
+.imagen2 {
+    /* Semilla_nativa_1 2 */
+position: relative;
+width: 100%;
+height: 538px;
+left: 0px;
+top: 1431px;
+background: url(Semilla_nativa_1.jpg);
+}
+
+.catalogo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.main__catalogo__texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagencatalogo {
+position: relative;
+width: 730px;
+height: 518px;
+left: 0px;
+top: 500px;
+}
+
+.tituloCatalogo {
+    /* Catálogo */
+position: relative;
+width: 659px;
+height: 52px;
+left: 100px;
+top: 600px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+.catalogoTexto {
+/* Contamos con un stock permanente de todos los materiales y asi damos respuesta inmediata a los requerimientos de nuestrosl clientes. */
+
+position: relative;
+width: 502px;
+height: 112px;
+left: 50px;
+top: 700px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+text-align: justify;
+color: #000000;
+}
+
+.catalogoBoton {
+    /* Catálogo */
+position: relative;
+left: 50%;
+top: 700px;
+width: 200px;
+height: 60px;
+background: #C4C4C4;
+border-radius: 5px;;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 28px;
+justify-content: center;
+/* CD Principal */
+color: #43B741;
+}
+
+.footer {
+    /* Molecula / Footer */
+    display: flex;
+    }
+
+.footer__principal {
+/* Molecula / Footer */
+display: flex;
+flex-direction: row;
+width: 100vw;
+position: relative;
+background: #FFFFFF;
+border-top: 2px solid #000000 ;
+top: 600px;
+}
+
+.footer__menu {
+    /* Footer / Molecula / Menu */
+flex-direction: column;
+position: relative;
+width: auto;
+height: 335px;
+left: 200px;
+top: 40px;
+font-family: Roboto;
+
+}
+
+footer div div ul li {
+list-style:none ;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 35px;
+display: flex;
+
+}
+
+.footer__contacto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 200px;
+}
+
+.footer__duda {
+    /* ¿Tienes alguna duda? Contactanos */
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: -0.01em;
+width: 300px;
+
+}
+
+.footer__lineas {
+    /* Footer / atomo / Lineas */
+/* LÍNEAS ROTATIVAS: (0351) 153279545 / (0351) 153279549 / (0351) 155636422 / (0351) 155294995 / (0351)156316331 / (0351) 153032020 */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 35px;
+color: #000000;
+}
+
+
+.footer_box1 {
+    /* Footer / Atomo / INFO */
+position: relative;
+display: flex;
+width: 428px;
+height: 276px;
+left: 73px;
+top: 36px;
+}
+
+.footer__info {
+    /* INFO DIRECCIÓN: Ruta E 64, X5105 Dumesnil Córdoba - Argentina EMAIL: clientes@canteradumesnil.com.ar HORARIO: Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs */
+position: relative;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 35px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+.footer__logo {
+height: 77.906px;
+width: 300px;
+left: 20px;
+top: 300px;
+border-radius: 0px;
+position: absolute;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px ) {
+    
+}
+
+
+@media screen and (max-width: 425px ) {
+  .header {
+    flex-direction: column;
+    position: relative ;
+    height: auto;
+      }
+
+.header__list {
+    flex-direction: column;
+    justify-content: left;
+    margin: 20px;
+}
+
+header div ul li {
+    padding: 10px;
+}
+
+   
+.header__contacto__boton {
+    left: 10%;  
+}
+    
+  .imagencatalogo {
+    width: 100vw;
+    }
+
+.texto__parrafos {
+    flex-direction: column;
+    padding: 5%;
+}
+.texto__parrafo1 {
+    display: inline-block;
+    left: 0px;
+}
+.texto__parrafo2 {
+    display: inline-block;
+    left: 0px;
+}
+
+.texto__titulo {
+    width: auto; 
+    height: auto; 
+    left: 0px;
+    padding: 5%;
+ }
+body main div div p {
+    width: auto;
+    height: auto;
+    }
+
+.catalogo {
+    flex-direction: column;
+}    
+.tituloCatalogo {
+width: auto;
+height: auto;
+left: 10px;
+top: 550px;
+justify-content: center;
+
+}
+
+.catalogoTexto {
+   
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 10px;
+    top: 600px;
+    justify-content: center;
+    padding: 5%;
+    }
+    
+.catalogoBoton {
+    top: 650px;
+    width: 150px;
+    height: auto;
+    justify-items: center;
+    }
+
+.footer__principal {
+    flex-direction: column;
+    top: 800px;
+    }
+
+
+.footer__menu {
+    /* Footer / Molecula / Menu */
+width: 192px;
+height: 335px;
+top: 36px;
+
+}
+
+
+.footer__contacto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+}
+
+.footer_box1 {
+    /* Footer / Atomo / INFO */
+left: 73px;
+top: 36px;
+}
+
+.footer__logo {
+left: 5%;
+top: 900px;
+}
+}
