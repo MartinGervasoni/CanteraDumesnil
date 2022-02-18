@@ -4,15 +4,28 @@
     box-sizing: border-box;
 }
 
+
+.bg__blanco {
+    background-color: white;
+}
+
+bg__verde {
+    background-color: #43B741;
+}
+
+.lc__verde {
+    color: #43B741;
+}
+
+.img__carrusel {
+    height: 70vh;
+    object-fit: cover;
+}
+
+
 .header {
     /* Header */
 position:fixed ;
-width: 100vw;
-height: 96px;
-flex-direction: row;
-display: inline-flex;
-z-index: 99;
-background-color: white;
 }
 .header__logo {
     /* LOGO DUMESNIL */
@@ -35,58 +48,10 @@ animation-delay: 0s;
 
 }
 
-.header__list {
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    border-radius: 0px;
-    flex-wrap: wrap;
-    font-family: Roboto;
-    align-content: center;
-    list-style:none;
-    justify-content: center;
-    left: 100px; 
-    }
-
-header div {display: inline-flex;
-}
-
-header div ul li a {
-    display: inline;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    height: 21px;
-    color: #43B741;
-    font-size: 16px;
-    line-height: 21px;
-    text-decoration: none;
-    margin: 0px 30px;
-    flex-grow: 0;
-    border-radius: 5px;
-    padding: 5px 15px;
-    transition: font-size 1ms, border 1ms;
-    border: 3px white solid;
-}
-
 header div ul li a:hover {
     border: 3px black solid;
-    
+   
  }
-
-
-.grid__padre {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 3fr;  
-    grid-template-areas: "header" "main" "footer";  
-    row-gap: 2rem;
-    }
-    
-    .header {grid-area: header;}
-    .main { grid-area: main; }
-    .footer {grid-area: footer;} 
 
 .header__list__negro {
     color: black;   
@@ -291,43 +256,24 @@ justify-content: center;
 color: #43B741;
 }
 
-.footer {
-    /* Molecula / Footer */
-    display: flex;
-    }
 
 .footer__principal {
 /* Molecula / Footer */
-display: flex;
-flex-direction: row;
 width: 100vw;
-position: relative;
 background: #FFFFFF;
 border-top: 2px solid #000000 ;
-top: 600px;
 }
 
-.footer__menu {
-    /* Footer / Molecula / Menu */
-flex-direction: column;
-position: relative;
-width: auto;
-height: 335px;
-left: 200px;
-top: 40px;
-font-family: Roboto;
-
-}
-
-footer div div ul li {
+.footer__lista {
 list-style:none ;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
-line-height: 35px;
+font-size: 1rem;
 display: flex;
-
+flex-direction: column;
+position: relative;
+width: auto;
 }
 
 .footer__contacto {
@@ -342,22 +288,19 @@ display: flex;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 32px;
+font-size: 2rem;
 line-height: 42px;
 letter-spacing: -0.01em;
-width: 300px;
+width: 30vw;
 
 }
 
 .footer__lineas {
-    /* Footer / atomo / Lineas */
-/* LÍNEAS ROTATIVAS: (0351) 153279545 / (0351) 153279549 / (0351) 155636422 / (0351) 155294995 / (0351)156316331 / (0351) 153032020 */
 
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
-line-height: 35px;
+font-size: 1rem;
 color: #000000;
 }
 
@@ -366,21 +309,14 @@ color: #000000;
     /* Footer / Atomo / INFO */
 position: relative;
 display: flex;
-width: 428px;
-height: 276px;
-left: 73px;
-top: 36px;
 }
 
 .footer__info {
     /* INFO DIRECCIÓN: Ruta E 64, X5105 Dumesnil Córdoba - Argentina EMAIL: clientes@canteradumesnil.com.ar HORARIO: Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs */
-position: relative;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
-line-height: 35px;
-display: flex;
+font-size: 1rem;
 align-items: center;
 color: #000000;
 }
@@ -388,129 +324,5 @@ color: #000000;
 .footer__logo {
 height: 77.906px;
 width: 300px;
-left: 20px;
-top: 300px;
 border-radius: 0px;
-position: absolute;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 768px ) {
-    
-}
-
-
-@media screen and (max-width: 425px ) {
-  .header {
-    flex-direction: column;
-    position: relative ;
-    height: auto;
-      }
-
-.header__list {
-    flex-direction: column;
-    justify-content: left;
-    margin: 20px;
-}
-
-header div ul li {
-    padding: 10px;
-}
-
-   
-.header__contacto__boton {
-    left: 10%;  
-}
-    
-  .imagencatalogo {
-    width: 100vw;
-    }
-
-.texto__parrafos {
-    flex-direction: column;
-    padding: 5%;
-}
-.texto__parrafo1 {
-    display: inline-block;
-    left: 0px;
-}
-.texto__parrafo2 {
-    display: inline-block;
-    left: 0px;
-}
-
-.texto__titulo {
-    width: auto; 
-    height: auto; 
-    left: 0px;
-    padding: 5%;
- }
-body main div div p {
-    width: auto;
-    height: auto;
-    }
-
-.catalogo {
-    flex-direction: column;
-}    
-.tituloCatalogo {
-width: auto;
-height: auto;
-left: 10px;
-top: 550px;
-justify-content: center;
-
-}
-
-.catalogoTexto {
-   
-    position: relative;
-    width: auto;
-    height: auto;
-    left: 10px;
-    top: 600px;
-    justify-content: center;
-    padding: 5%;
-    }
-    
-.catalogoBoton {
-    top: 650px;
-    width: 150px;
-    height: auto;
-    justify-items: center;
-    }
-
-.footer__principal {
-    flex-direction: column;
-    top: 800px;
-    }
-
-
-.footer__menu {
-    /* Footer / Molecula / Menu */
-width: 192px;
-height: 335px;
-top: 36px;
-
-}
-
-
-.footer__contacto {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    left: 100px;
-}
-
-.footer_box1 {
-    /* Footer / Atomo / INFO */
-left: 73px;
-top: 36px;
-}
-
-.footer__logo {
-left: 5%;
-top: 900px;
-}
 }
