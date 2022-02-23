@@ -10,10 +10,10 @@
     <script src="https://kit.fontawesome.com/8c08eb81d6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../CanteraDumesnil/Multimedia/LogoDumesnil.jpg" type="image/x-icon">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg__blanco ">
-        <div class="container-fluid ">
-         <img src="./Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="header__logo navbar-brand">
+<body>  
+    <nav class="navbar navbar-expand-lg bg__blanco">
+        <div class="container-fluid">
+          <img src="./Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="header__logo navbar-brand">
           <button class="navbar-toggler lc__verde" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -23,13 +23,13 @@
                 <a class="nav-link active lc__verde" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lc__verde" href="#">Nosotros</a>
+                <a class="nav-link lc__verde" href="./Vistas/Nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lc__verde" href="#">Servicios</a>
+                <a class="nav-link lc__verde" href="./Vistas/Servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lc__verde" href="#">Desarrollo Sostenible</a>
+                <a class="nav-link lc__verde" href="./Vistas/DesarrolloSostenible.html">Desarrollo Sostenible</a>
               </li>
               <li><div class="header__contacto__boton">
                 <i class="far fa-envelope fa-4x header__contacto"></i>
@@ -39,40 +39,22 @@
           </div>
         </div>
       </nav>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 p-0">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./Multimedia/CanteraDumesnilCerro.jpeg" class="d-block w-100 img__carrusel" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./Multimedia/CanteraDumesnilMontañaPiedra.jpeg" class="d-block w-100 img__carrusel" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./Multimedia/CanteraDumesnilPiedras100300.jpeg" class="d-block w-100 img__carrusel" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-
+        <section class="contenedor-video">
+          <div id="video_overlays">
+            <div class="info-home row">
+              <h1> ¿En qué podemos ayudarte? </h1>
+              <form method="GET" action="#"  class="buscador-home">
+                <input name="q" placeholder="Piedras, Puesto en obra"   autocomplete="false">
+                <button type="submit" class="nav-link toggle-search"><i class="fa fa-search"></i> </button>
+              </form>
             </div>
-        </div>
-    </section>
-    <section class="container">
+          </div>
+          <video autoplay="" muted="" loop="" poster="./Multimedia/Cantera_Piedras.jpg">
+            <source src="/Multimedia/Video_Cinta.MOV">
+          </video>
+        </section>
+
+    <section class="container p-5">
         <div class="row">
             <div><h2 class="col-md-10">NUESTRA ACTIVIDAD ES FUNDAMENTAL PARA EL DESARROLLO DE NUSTRAS COMUNIDADES</h2></div>
             <div class="col-md-6">
@@ -84,30 +66,34 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="servicios p-5">
+      <div class="container">
         <div class="row">
-            <div class="card mb-6" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./Multimedia/Catologo.jpeg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Catalogo</h5>
-                      <p class="card-text">Contamos con un stock permanente de todos los materiales y asi damos respuesta inmediata a los requerimientos de nuestrosl clientes.</p>
-                      <button type="button" class="btn btn-primary btn-lg bg__verde">Catalogo</button>
-                    </div>
-                  </div>
+          <div class="col-md-12 servicios-titulo">
+            <h2> Nuestros <span> Productos</span></h2>
+          </div>
+                  <div class="servicios-contenedor">
+              <div>
+                <span><img src="./Multimedia/Catologo.jpeg" class="col-md-3 servicios-imagen bloque-servicios" alt=""></span>
+                <span><img src="./Multimedia/Catologo.jpeg" class="col-md-3 servicios-imagen bloque-servicios" alt=""></span>
+                <span><img src="./Multimedia/Catologo.jpeg" class="col-md-3 servicios-imagen bloque-servicios" alt=""></span>
+                </div>
+              <div class="col-md-4 servicios-info-bloque bloque-servicios servicio-background-1">
+                <div class="servicios-info">
+                  <h3> CATALOGO </h3>
+                  <p> Contamos con un stock permanente de todos los materiales y asi damos respuesta inmediata a los requerimientos de nuestrosl clientes. </p>
+                  <button type="button" class="btn btn-primary btn-lg bg__verde">Catalogo</button>
                 </div>
               </div>
-        </div>
+            </div>
+      </div>
     </section>
     
     <main class="main">
         <div class="whatsapp__container "><a href="https://wa.me/5493513304325" target="_blank"> <i class="fa fa-whatsapp "></i> </a>
         </div>
     </main>
-    <section class="container">
+    <section class="container p-5">
         <footer class="row">
             <div class="col-md-4">
                    <span class="footer__info">INFO
@@ -138,8 +124,8 @@
             </div>
         </footer>
     </section>
-
-
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
