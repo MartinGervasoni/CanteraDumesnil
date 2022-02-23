@@ -63,7 +63,6 @@ header div ul li a:hover {
     flex-direction:column;
     height: 91px;
     width: 220px;
-    left: 15%;
     top: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
@@ -85,18 +84,19 @@ text-decoration: none;
 }
 
 .whatsapp__container {
-    left: 93%;
+    left: 90%;
     background-color: #6bc047;
     border-radius: 50%;
     text-align: center;
     position: fixed;
-    bottom: 55px;
+    bottom: 65px;
     z-index: 11;
     width: 65px;
     height: 65px;
     font-size: 54px;
     padding-top: 2px;
    }
+   
 
 .fa-whatsapp {   
     content: "\f232";
@@ -126,8 +126,7 @@ border-radius: 0px;
     width: 100%;
     height: 538px;
     left: 0px;
-    top: 300px;
-       }
+    }
 
 
 .texto__titulo {
@@ -259,8 +258,7 @@ color: #43B741;
 
 .footer__principal {
 /* Molecula / Footer */
-width: 100vw;
-background: #FFFFFF;
+
 border-top: 2px solid #000000 ;
 }
 
@@ -274,6 +272,7 @@ display: flex;
 flex-direction: column;
 position: relative;
 width: auto;
+
 }
 
 .footer__contacto {
