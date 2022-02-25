@@ -1,0 +1,16 @@
+
+@media (max-width: 576px) {
+    .contenedor-video {
+        height: 400px;
+        background-image:  no-repeat;
+        background-size: cover;
+        background-position: center;}
+    .video-home h1 {
+        font-size: 28px;
+    }
+ }
+ @media (max-width: 423px) { 
+    .video-home h1 {
+        font-size: 22px;
+    }
+}
