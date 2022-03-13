@@ -1,0 +1,326 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.whatsapp__container {
+  left: 90%;
+  background-color: #6bc047;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  bottom: 65px;
+  z-index: 11;
+  width: 65px;
+  height: 65px;
+  font-size: 54px;
+  padding-top: 2px;
+}
+
+.fa-whatsapp {
+  content: "\f232";
+}
+
+.fa {
+  display: inline-block;
+  font: normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+.bg__blanco {
+  background-color: white;
+}
+
+bg__verde {
+  background-color: #43B741;
+}
+
+.lc__verde {
+  color: #43B741;
+}
+
+.img__carrusel {
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  /* Header */
+  position: fixed;
+}
+
+.header__logo {
+  /* LOGO DUMESNIL */
+  position: relative;
+  height: 77.90px;
+  width: 300px;
+  left: 15px;
+  top: 9px;
+  border-radius: 0px;
+  -webkit-animation-name: Logo;
+          animation-name: Logo;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes logo {
+  100% {
+  }
+}
+
+@keyframes logo {
+  100% {
+  }
+}
+
+.header__list__negro {
+  color: black;
+}
+
+.header__contacto__boton {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 91px;
+  width: 220px;
+  top: 0px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__contacto {
+  /* Contactanos */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /* identical to box height line-height: 21px;*/
+  /* CD Principal */
+  color: #43B741;
+  text-decoration: none;
+}
+
+header div ul li a:hover {
+  border: 3px black solid;
+}
+
+.section__imagenfija__parrafo {
+  background-image: url(../Multimedia/CD_Desarrollo-Sostenible.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 538px;
+  left: 0px;
+}
+
+.servicios-titulo {
+  padding: 0px;
+  margin: 40px 0px 30px 0px;
+}
+
+.servicios-contenedor {
+  width: 100%;
+  display: contents;
+  margin-bottom: 20px;
+}
+
+.bloque-servicios {
+  margin-bottom: 20px;
+}
+
+.servicios-imagen {
+  height: 310px;
+}
+
+.servicios-info {
+  height: 310px;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor-video {
+  margin: 0 auto;
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-video video {
+  z-index: -1;
+  min-width: 100%;
+  border: none;
+  display: block;
+}
+
+#video_overlays {
+  position: absolute !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(113, 218, 72, 0.3)), to(rgba(113, 218, 72, 0.1)));
+  background-image: linear-gradient(to right, rgba(113, 218, 72, 0.3), rgba(113, 218, 72, 0.1));
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-home {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.video-home h1 {
+  font-family: Roboto;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: normal;
+  /* font-stretch: normal; */
+  /* line-height: normal; */
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.footer {
+  /* Molecula / Footer */
+  border-top: 2px solid #000000;
+}
+
+.footer__lista {
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: auto;
+}
+
+.footer__contacto {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 200px;
+}
+
+.footer__duda {
+  /* ¿Tienes alguna duda? Contactanos */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 42px;
+  letter-spacing: -0.01em;
+  width: 30vw;
+}
+
+.footer__lineas {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.footer_box1 {
+  /* Footer / Atomo / INFO */
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info {
+  /* INFO DIRECCIÓN: Ruta E 64, X5105 Dumesnil Córdoba - Argentina EMAIL: clientes@canteradumesnil.com.ar HORARIO: Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.footer__logo {
+  height: 77.906px;
+  width: 300px;
+  border-radius: 0px;
+}
+
+@media (max-width: 576px) {
+  .contenedor-video {
+    height: 400px;
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .video-home h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 423px) {
+  .video-home h1 {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
