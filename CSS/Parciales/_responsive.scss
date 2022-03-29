@@ -1,12 +1,13 @@
 
 @media (max-width: 576px) {
+    html
     .contenedor-video {
         height: 400px;
         background-image:  no-repeat;
         background-size: cover;
         background-position: center;}
     .video-home h1 {
-        font-size: 28px;
+        font-size: 2rem;
     }
  }
  @media (max-width: 423px) { 

@@ -1,7 +1,6 @@
 
-.header {
-    /* Header */
-position:fixed ;
+.nav {  /* Header */
+position: fixed ;
 
 &__logo {
     /* LOGO DUMESNIL */
@@ -30,7 +29,7 @@ animation-delay: 0s;
     position: relative;
     display: flex;
     flex-direction:column;
-    height: 91px;
+    height: 96px;
     width: 220px;
     top: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -42,17 +41,26 @@ animation-delay: 0s;
 &__contacto {
 /* Contactanos */
 
-font-family: Roboto;
+font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: bold;
-font-size: 18px;
-/* identical to box height line-height: 21px;*/
-/* CD Principal */
+font-size: 1.2rem;
 color: #43B741;   
 text-decoration: none;
+padding: 0px;
+margin: 0px;
 }
 }
 
-header div ul li a:hover {
-    border: 3px black solid;
- }
+.roboto li a {
+    font-family: 'Roboto', sans-serif;    
+}
+
+nav div ul li a {
+    border: 5px white solid;
+}
+
+nav div ul li a:hover {
+    
+    background-color: lightgray;
+}

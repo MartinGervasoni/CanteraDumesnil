@@ -1,9 +1,15 @@
 .footer {
-    /* Molecula / Footer */
     border-top: 2px solid #000000 ;
+
+    &__title {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    
     &__lista {
     list-style:none ;
-    font-family: Roboto;
+    font-family: Roboto , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -11,7 +17,10 @@
     flex-direction: column;
     position: relative;
     width: auto;
+    line-height: 2.5rem;
+
     }
+
     &__contacto {
         position: relative;
         display: flex;
@@ -21,7 +30,7 @@
     
     &__duda {
         /* ¿Tienes alguna duda? Contactanos */
-    font-family: Roboto;
+    font-family: Roboto , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2rem;
@@ -33,7 +42,7 @@
     
     &__lineas {
     
-    font-family: Roboto;
+    font-family: Roboto , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -49,7 +58,7 @@
     
     &__info {
         /* INFO DIRECCIÓN: Ruta E 64, X5105 Dumesnil Córdoba - Argentina EMAIL: clientes@canteradumesnil.com.ar HORARIO: Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs */
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;

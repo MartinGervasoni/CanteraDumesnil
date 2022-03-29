@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="..//CSS/main.css">
     <meta charset="UTF-8">
@@ -14,34 +17,38 @@
     <link rel="shortcut icon" href="../CanteraDumesnil/Multimedia/LogoDumesnil.jpg" type="image/x-icon">
 </head>
     
-  <nav class="navbar navbar-expand-lg bg__blanco">
-    <div class="container-fluid">
-      <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="header__logo navbar-brand">
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-      <div class="justify-content-around collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item ">
-            <a class="nav-link active lc__verde" aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lc__verde" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lc__verde" href="./Servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lc__verde" href="./DesarrolloSostenible.html">Desarrollo Sostenible</a>
-          </li>
-          <li><div class="header__contacto__boton">
-            <i class="far fa-envelope fa-4x header__contacto"></i>
-            <a href="./Contactanos.html" class="header__contacto">Contactanos</a></div>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="nav__logo navbar-brand">
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="justify-content-around collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav align-items-center roboto text-uppercase">
+        <li class="nav-item">
+          <a class="nav-link active lc__verde" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lc__verde" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lc__verde" href="../Vistas/Servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lc__verde" href="../Vistas/DesarrolloSostenible.html">Desarrollo Sostenible</a>
+        </li>
+        
+        <li>
+          <a href="../Vistas/Contactanos.html" class="btn nav__contacto__boton" role="button" aria-pressed="true">
+            <div> <i class="far fa-envelope fa-4x nav__contacto"></i>
+            <p class="nav__contacto"> Contactanos</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
     <section class="container-fluid">
      <div class="row footer__principal">
         <div class="col-md-12 p-0">
@@ -77,65 +84,79 @@
     </section>
     <section class="container mt-5">
       <div class="row">
-          <div class="col-md-12">
-              <p>Cantera Dumesnil es una PYME familiar con más de 38 años de trayectoria. Desde el inicio de su actividad se caracterizó por su compromiso con el entorno y la comunidad donde opera.</p>
-          </div>
-          <div class="col-md-12">
-              <p>Una de las principales PYME de la zona de Villa Allende. Motor de crecimiento de la región y fuente de trabajo, directo e indirecto, de ciento de familias vecinas.</p>
-          </div>
-          <div class="col-md-12">
-            <p>La principal actividad de la empresa es la producción y comercialización de piedra triturada para la industria vial y de la construcción. A través de procesos puramente mecánicos, las rocas pasan por diferentes etapas de disminución de su tamaño hasta alcanzar un tamaño de grano acorde a la finalidad que se busca en el producto. Dichas etapas cumplen con un estricto control de calidad ambiental, y son las siguientes: <br>       
-    • Perforación y voladura en los bancos de cantera <br>
-    • Carga y acarreo de la piedra de voladura <br>
-    • Trituración y clasificación de los productos según granulometría <br>
-    • Acopio de materiales in situ <br>
-    • Transporte y puesta en obra de los productos comercializados <br>
+        <h2>NOSOTROS</h2>
+          <div class="col-md-6">
+            
+            <p>Cantera Dumesnil es una PYME familiar con más de 38 años de trayectoria. Desde el inicio de su actividad se caracterizó por su compromiso con el entorno y la comunidad donde opera.
+            Una de las principales PYME de la zona de Villa Allende. Motor de crecimiento de la región y fuente de trabajo, directo e indirecto, de ciento de familias vecinas. <br>
+            La principal actividad de la empresa es la producción y comercialización de piedra triturada para la industria vial y de la construcción. A través de procesos puramente mecánicos, las rocas pasan por diferentes etapas de disminución de su tamaño hasta alcanzar un tamaño de grano acorde a la finalidad que se busca en el producto. Dichas etapas cumplen con un estricto control de calidad ambiental, y son las siguientes: <br>       
+            • Perforación y voladura en los bancos de cantera <br>
+            • Carga y acarreo de la piedra de voladura <br>
+            • Trituración y clasificación de los productos según granulometría <br>
+            • Acopio de materiales in situ <br>
+            • Transporte y puesta en obra de los productos comercializados <br>
             </p>
         </div>
-        <div class="col-md-12">
-          <p>Desarrolla su actividad de modo sostenible haciendo especial hincapié en el plano ambiental, económico, y social. Realizando una constante inversión en maquinaria de última generación, en capital humano y en el desarrollo de procesos que reduzcan al máximo el impacto ambiental de su actividad. Utiliza tecnología que minimizan las emisiones de gases, polvo y ruido, siguiendo los estándares de seguridad y ambiente europeos.
-          Siempre ha trabajado cumpliendo toda reglamentación Nacional y Provincial, tanto en materia minera como ambiental que regula la actividad en un marco de sostenibilidad y productividad de manera equilibrada.</p>
-      </div>
-      <div class="col-md-12">
-        <p>La escala de producción llevada a cabo en el predio es significativamente menor que aquella correspondiente a la minería metalífera, en donde los volúmenes de extracción y maquinaria involucrada es hasta 20 veces superior y se utilizan otros elementos químicos en su proceso que generan impacto sobre el agua y el aire.</p>
-      </div>
-      <div class="col-md-12">
-        <p>Desde sus inicios, ha abastecido desde pequeñas a grandes obras de infraestructura tanto viales, férreas, civiles por intermedio de empresas de orden público como así también privadas, destacándose entre otras: tramos de la autopista Córdoba a Rosario, RN 34, reparación y ampliación de la pista principal del Aeropuerto Pajas Blancas de la Ciudad de Córdoba.</p>
-      </div>
-      </div>
+        <div class="col-md-6">
+          <p>Desarrolla su actividad de modo sostenible haciendo especial hincapié en el plano ambiental, económico, y social. Realizando una constante inversión en maquinaria de última generación, en capital humano y en el desarrollo de procesos que reduzcan al máximo el impacto ambiental de su actividad. Utiliza tecnología que minimizan las emisiones de gases, polvo y ruido, siguiendo los estándares de seguridad y ambiente europeos. <br>
+          Siempre ha trabajado cumpliendo toda reglamentación Nacional y Provincial, tanto en materia minera como ambiental que regula la actividad en un marco de sostenibilidad y productividad de manera equilibrada. <br>
+          La escala de producción llevada a cabo en el predio es significativamente menor que aquella correspondiente a la minería metalífera, en donde los volúmenes de extracción y maquinaria involucrada es hasta 20 veces superior y se utilizan otros elementos químicos en su proceso que generan impacto sobre el agua y el aire. <br>
+          Desde sus inicios, ha abastecido desde pequeñas a grandes obras de infraestructura tanto viales,  férreas, civiles por intermedio de empresas de orden público como así también privadas, destacándose entre otras: tramos de la autopista Córdoba a Rosario, RN 34, reparación y ampliación de la pista principal del Aeropuerto Pajas Blancas de la Ciudad de Córdoba.</p>
+        </div>
+        </div>
   </section>
           
-          <section class="container p-5">
-            <footer class="row footer__principal">
-                <div class="col-md-4">
-                       <span class="footer__info">INFO
-                           DIRECCIÓN: 
-                           Ruta E 64, X5105 Dsumesnil <br>
-                           Córdoba - Argentina <br>
-                           EMAIL: <br>
-                           clientes@canteradumesnil.com.ar <br>
-                           HORARIO: <br>
-                           Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs<br>
-                        </span> <br>
-                       <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil" class="footer__logo">
-                </div>
-                <div class="col-md-4" >
-                       <ul class="footer__lista">
-                           <li>Inicio</li>
-                           <li>Nosotros</li>
-                           <li>Servicios</li>
-                           <li>Desarrollo sostenible</li>
-                           <li>Compromiso</li>
-                       </ul>
-                </div>
-                <div class=" col-md-4 ">
-                       <h3 class="footer__duda">¿Tienes alguna duda? Contactanos</h3>
-                       <span class="footer__lineas">LÍNEAS ROTATIVAS:
-                       (0351) 153279545 / (0351) 153279549 / (0351) 155636422 / (0351) 155294995 / (0351)156316331 / (0351) 153032020
-                       </span>
-                </div>
-            </footer>
-        </section>
+  <main class="main">
+    <div id="whatsapp-container">
+      <div class="right with-chat" id="whatsapp-flogo">
+          <a href="https://wa.me/5493513279550" target="_blank"> <i class="fa fa-whatsapp"></i> </a>
+      </div>
+  </div>
+  </main>
+  <section class="container-fluid mt-5">
+      <footer class="row footer d-flex justify-content-around">
+          <div class="col-md-3 m-4">
+            <h3 class="footer__title">INFO</h3>
+            <ul class="footer__lista">
+              <li>DIRECCIÓN: <br>
+                Ruta E 64, X5105 Dumesnil <br>
+                Córdoba - Argentina <br>
+              </li>
+              <li>EMAIL: <br>
+                <span><a href="mailto:clientes@canteradumesnil.com.ar">clientes@canteradumesnil.com.ar</a></span>
+              </li>
+              <li>HORARIO: <br>
+                Lunes a Viernes de 7 a 21 hs / <br>
+                 Sábados de 8 a 12 hs<br>
+              </li>
+            </ul>
+            <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil" class="footer__logo">
+          </div>
+      
+          <div class="col-md-3 m-4" >
+            <h3 class="footer__title">MENÚ</h3>
+            <ul class="footer__lista ">
+              <li>  <a class="nav-link active text-dark" aria-current="page" href="../index.html">Inicio</a> </li>
+              <li><a class="nav-link active text-dark" aria-current="page" href="#">Nosotros</a></li>
+              <li><a class="nav-link active text-dark" aria-current="page" href="../Vistas/Servicios.html">Servicios</a></li>
+              <li><a class="nav-link active text-dark" aria-current="page" href="../Vistas/DesarrolloSostenible.html">Desarrollo Sostenible</a></li>
+              <li><a href="../Vistas/Contactanos.html" class="nav-link active text-dark">Contactanos</a></li>
+            </ul>
+          </div>
+          <div class=" col-md-3 m-4 ">
+            <h3 class="footer__title">¿TENES ALGUNA DUDA? CONTACTANOS</h3>
+            <h3 class="footer__title">LÍNEAS ROTATIVAS:</h3>
+            <ul class="footer__lista">
+              <li>(0351) 153279545</li>
+              <li>(0351) 153279549</li>
+              <li>(0351) 155636422</li>
+              <li>(0351) 155294995</li>
+              <li>(0351)156316331</li>
+              <li>(0351) 153032020</li>
+            </ul>
+          </div>
+      </footer>
+  </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
 </body>
 </html>

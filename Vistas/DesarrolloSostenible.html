@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main.css">
     <meta charset="UTF-8">
@@ -13,66 +16,144 @@
     <script src="https://kit.fontawesome.com/8c08eb81d6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../CanteraDumesnil/Multimedia/LogoDumesnil.jpg" type="image/x-icon">
 </head>
-  <nav class="navbar navbar-expand-lg bg__blanco">
-    <div class="container-fluid">
-      <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="header__logo navbar-brand">
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon "></span>
-     </button>
-      <div class="justify-content-around collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item ">
-            <a class="nav-link active lc__verde" aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lc__verde" href="./Nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lc__verde" href="./Servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lc__verde" href="#">Desarrollo Sostenible</a>
-          </li>
-          <li><div class="header__contacto__boton">
-            <i class="far fa-envelope fa-4x header__contacto"></i>
-            <a href="./Contactanos.html" class="header__contacto">Contactanos</a></div>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="nav__logo navbar-brand">
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="justify-content-around collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav align-items-center roboto text-uppercase">
+        <li class="nav-item">
+          <a class="nav-link active lc__verde" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lc__verde" href="../Vistas/Nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lc__verde" href="../Vistas/Servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lc__verde" href="#">Desarrollo Sostenible</a>
+        </li>
+        
+        <li>
+          <a href="../Vistas/Contactanos.html" class="btn nav__contacto__boton" role="button" aria-pressed="true">
+            <div> <i class="far fa-envelope fa-4x nav__contacto"></i>
+            <p class="nav__contacto"> Contactanos</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav> 
 
-          <section class="container p-5">
-            <footer class="row footer__principal">
-                <div class="col-md-4">
-                       <span class="footer__info">INFO
-                           DIRECCIÓN: 
-                           Ruta E 64, X5105 Dsumesnil <br>
-                           Córdoba - Argentina <br>
-                           EMAIL: <br>
-                           clientes@canteradumesnil.com.ar <br>
-                           HORARIO: <br>
-                           Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs<br>
-                        </span> <br>
-                       <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil" class="footer__logo">
-                </div>
-                <div class="col-md-4" >
-                       <ul class="footer__lista">
-                           <li>Inicio</li>
-                           <li>Nosotros</li>
-                           <li>Servicios</li>
-                           <li>Desarrollo sostenible</li>
-                           <li>Compromiso</li>
-                       </ul>
-                </div>
-                <div class=" col-md-4 ">
-                       <h3 class="footer__duda">¿Tienes alguna duda? Contactanos</h3>
-                       <span class="footer__lineas">LÍNEAS ROTATIVAS:
-                       (0351) 153279545 / (0351) 153279549 / (0351) 155636422 / (0351) 155294995 / (0351)156316331 / (0351) 153032020
-                       </span>
-                </div>
-            </footer>
-        </section>
+<main class="main">
+    <div id="whatsapp-container">
+      <div class="right with-chat" id="whatsapp-flogo">
+          <a href="https://wa.me/5493513279550" target="_blank"> <i class="fa fa-whatsapp"></i> </a>
+      </div>
+  </div>
+  </main>
+ 
+<section class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12 sectionDS__imagenfija"> </div>
+  </div>
+</section>
+<section class="container mt-5">
+  <div class="row">
+      <div><h2 class="col-md-12 m-5 text-center">DESARROLLO SOSTENIBLE</h2></div>
+      <div class="col-md-6">
+          <p>El desarrollo sostenible es una prioridad para El Gran Ombú. En la actualidad, las evoluciones de nuestros procesos permiten, en un plazo de cuatro años, reforestar completamente los terrenos intervenidos. <br>
+            Los sistemas productivos que hoy se implementan disminuyen notoriamente el impacto en comparación a los que se aplicaban cuarenta años atrás, esto es gracias a nuestra permanente incorporación de nuevas tecnologías y a nuestros planes de gestión ambiental. Los avances de la tecnología, a través de la mejora continua y de los planes de gestión ambiental, hemos logrado mitigar y controlar nuestro actual impacto.<br>
+            Nuestra actividad se encuentra bajo un estricto sistema normativo, provincial y nacional, para garantizar la adecuada remediación del impacto que su desarrollo produce. El Gran Ombú, a lo largo de sus más de 38 años de historia, siempre ha cumplimentado todas las exigencias vigentes.<br>
+            Nuestro compromiso con el ambiente y entorno donde operamos, implica la instrumentación de la mejora continua de cada uno de nuestros procesos, involucrando grandes inversiones para estar a la vanguardia del desarrollo productivo de nuestra industria.<br>
+            En nuestros procesos de extracción y trituración, se garantiza un impacto ambiental controlado, con remediación en cada área intervenida. Un aspecto importante a destacar es que nuestra actividad no involucra el uso de componentes contaminantes para el aire, flora y fauna, como si sucede en otro tipo de minería. Por lo tanto, con solo interrumpir la actividad el follaje surge de manera espontánea. Esto hoy se evidencia en nuestro predio, donde hay zonas que se han reforestado, devolviéndoles su vegetación de origen.<br>
+            A su vez, hemos incorporado tecnología, para reemplazar el uso de explosivos en partes de nuestro proceso productivo, logrando disminuir el impacto que antiguamente se generaba. 
+            A lo largo de nuestros 38 años de vida, hemos implementado en nuestros procesos todas las mejoras que han ido surgiendo, inclusive, anticipándonos a las regulaciones y exigencias de las normativas.<br>
+            Nuestros sistemas de extracción son de última generación, afectando lo menos posible al entorno.
+            </p>
+      </div>
+      <div class="col-md-6">
+          <p>Utilizamos transportes equipados con tecnología activa y pasiva, que brindan mayor seguridad a todas las personas involucradas. A su vez, cuentan con capacidad ampliada de carga, homologada y adaptada a las nuevas normativas de tránsito.<br>
+            Realizamos mediciones de polvo en suspensión, vibraciones, ruido ambiental, con empresas de primer nivel que trabajan con nuestros profesionales, para garantizar consumos de energía contenidos, bajas emisiones de polvo y ruido.<br>
+            Contamos con procesos de medición del impacto acústico, el cual nos permite disminuirlo a su máxima expresión posible. Y aplicamos un sistema de pulverización en forma de nube de agua, que captura las partículas en suspensión de polvo en el aire y las hace precipitar.<br>
+            Implementamos sistemas de control para garantizar que no afectamos los recursos hídricos. Nuestra actividad no genera ningún desorden hídrico. Dentro nuestro plan de gestión ambiental, realizamos controles y mediciones periódicas comparativas que nos permiten realizar un seguimiento continuo.  <br>
+            El Gran Ombú, cuenta con profesionales altamente capacitados y en continua formación, que implementan nuevas tecnologías y procesos constantemente. <br>
+            Hemos implementado un sistema de reforestación que permitió remediar 18 hectáreas. somos pioneros en la implementación de planes de este tipo, con resultados en el corto plazo, muy exitosos.  <br>
+            Desarrollamos un vivero de flora autóctona, para la auto provisión de especies nativas que son implantadas dentro del plan de remedición. Con capacidad para 4000 individuos; las nuevas exigencias medioambientales requieren un mayor volumen y velocidad de producción. Hoy trabajamos en el desarrollo de nuestro nuevo vivero, con mayor superficie, con tecnología aplicada, para que el desarrollo de las especies se pueda dar en todas las condiciones de clima, a fin de que para las épocas de plantación estén listas más de 12.000 individuos.</p>
+      </div>
+  </div>
+</section>
+
+
+
+
+   
+        
+        
+        
+          
+      </div>  
+    </div>
+
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="container-fluid mt-5">
+      <footer class="row footer d-flex justify-content-around">
+          <div class="col-md-3 m-4">
+            <h3 class="footer__title">INFO</h3>
+            <ul class="footer__lista">
+              <li>DIRECCIÓN: <br>
+                Ruta E 64, X5105 Dumesnil <br>
+                Córdoba - Argentina <br>
+              </li>
+              <li>EMAIL: <br>
+                <span><a href="mailto:clientes@canteradumesnil.com.ar">clientes@canteradumesnil.com.ar</a></span>
+              </li>
+              <li>HORARIO: <br>
+                Lunes a Viernes de 7 a 21 hs / <br>
+                 Sábados de 8 a 12 hs<br>
+              </li>
+            </ul>
+            <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil" class="footer__logo">
+          </div>
+      
+          <div class="col-md-3 m-4" >
+            <h3 class="footer__title">MENÚ</h3>
+            <ul class="footer__lista ">
+              <li>  <a class="nav-link active text-dark" aria-current="page" href="../index.html">Inicio</a> </li>
+              <li><a class="nav-link active text-dark" aria-current="page" href="../Vistas/Nosotros.html">Nosotros</a></li>
+              <li><a class="nav-link active text-dark" aria-current="page" href="../Vistas/Servicios.html">Servicios</a></li>
+              <li><a class="nav-link active text-dark" aria-current="page" href="#">Desarrollo Sostenible</a></li>
+              <li><a href="../Vistas/Contactanos.html" class="nav-link active text-dark">Contactanos</a></li>
+            </ul>
+          </div>
+          <div class=" col-md-3 m-4 ">
+            <h3 class="footer__title">¿TENES ALGUNA DUDA? CONTACTANOS</h3>
+            <h3 class="footer__title">LÍNEAS ROTATIVAS:</h3>
+            <ul class="footer__lista">
+              <li>(0351) 153279545</li>
+              <li>(0351) 153279549</li>
+              <li>(0351) 155636422</li>
+              <li>(0351) 155294995</li>
+              <li>(0351)156316331</li>
+              <li>(0351) 153032020</li>
+            </ul>
+          </div>
+      </footer>
+  </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
 </body>
 </html>

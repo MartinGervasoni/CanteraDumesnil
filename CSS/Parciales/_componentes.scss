@@ -1,7 +1,7 @@
 $colores: (
-    "principal" : #6bc047 ,
-    "secundario" : rgba(0, 0, 0) ,
-    "acento" : rgba(0, 0, 0, 0.7)
+    "principal" : #6bc047   ,
+    "secundario" : black     ,
+    "acento" : grey   
 ); 
 @each $color , $valor in $colores {
     .titulo--#{$color} {
@@ -9,43 +9,56 @@ $colores: (
     }    
 }
 
-.whatsapp__container {
-    left: 90%;
+#whatsapp-flogo {
+    padding-top: 4px;
+}
+
+#whatsapp-container {
+    right: 22px;
     background-color: #6bc047;
     border-radius: 50%;
     text-align: center;
     position: fixed;
-    bottom: 65px;
+    bottom: 55px;
     z-index: 11;
     width: 65px;
     height: 65px;
     font-size: 54px;
     padding-top: 2px;
-   }
-   
+    line-height: none;
+    font-family: none;
+    }
 
-.fa-whatsapp {   
+.fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+.fa-whatsapp:before {
     content: "\f232";
 }
-.fa {
-    display: inline-block;
-    font: normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+
+#whatsapp-container a {
     color: white;
-    }
+}
 
     .bg__blanco {
         background-color: white;
     }
     
-    bg__verde {
+    .bg__verde {
         background-color: #43B741;
+        border-color: #43B741 1px solid;
+        color: white;
     }
     
     .lc__verde {
         color: #43B741;
+        
     }
     
     .img__carrusel {
