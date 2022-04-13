@@ -10,16 +10,50 @@ width: 300px;
 left: 15px; 
 top: 9px;
 border-radius: 0px;
-animation-name: Logo;
+animation-name: logo;
 animation-iteration-count: 1 ;
-animation-timing-function: ease-in;
+animation-timing-function: ease-out;
 animation-duration: 2s;
 animation-delay: 0s;
+z-index: 100;
 }
 
 @keyframes logo {
-100% {   }
+0% {position: absolute;
+    left: 12rem; 
+    top: 12rem;
+    height: 232px;
+    width: 900px;  }
+20% {position: absolute;
+    left: 12rem; 
+    top: 12rem;
+    height: 232px;
+    width: 900px;  }
+25% { position: absolute;
+    left: 8rem; 
+    top: 8rem;
+    height: 180px;
+    width: 700px;   }
+50% { position: absolute;
+    left: 5rem; 
+    top: 5rem;
+    height: 117px;
+    width: 450px;  }
+95% { position: absolute;
+    left: 1rem; 
+    top: 0.6rem;
+    height: 77.90px;
+    width: 300px;  }
+100% { position: relative;
+    left: 1rem; 
+    top: 0.6rem;
+    height: 77.90px;
+    width: 300px;
+      }
+    
 }
+
+
 
 &__list__negro {
     color: black;   
@@ -63,4 +97,5 @@ nav div ul li a {
 nav div ul li a:hover {
     
     background-color: lightgray;
+    color : white  ;
 }

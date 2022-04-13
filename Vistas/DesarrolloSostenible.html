@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
     <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="nav__logo navbar-brand">
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler br__verde " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>
     </button>
     <div class="justify-content-around collapse navbar-collapse " id="navbarNav">
@@ -34,7 +36,7 @@
           <a class="nav-link lc__verde" href="../Vistas/Servicios.html">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link lc__verde" href="#">Desarrollo Sostenible</a>
+          <a class="nav-link lc__negro" href="#">Desarrollo Sostenible</a>
         </li>
         
         <li>
@@ -57,14 +59,14 @@
   </div>
   </main>
  
-<section class="container-fluid mt-5">
+<section class="container-fluid">
   <div class="row">
     <div class="col-md-12 sectionDS__imagenfija"> </div>
   </div>
 </section>
 <section class="container mt-5">
   <div class="row">
-      <div><h2 class="col-md-12 m-5 text-center">DESARROLLO SOSTENIBLE</h2></div>
+      <div><h1  data-aos="fade-up" data-aos-duration="1000" class="lc__verde col-md-12 m-5 text-left">DESARROLLO SOSTENIBLE</h1></div>
       <div class="col-md-6">
           <p>El desarrollo sostenible es una prioridad para El Gran Ombú. En la actualidad, las evoluciones de nuestros procesos permiten, en un plazo de cuatro años, reforestar completamente los terrenos intervenidos. <br>
             Los sistemas productivos que hoy se implementan disminuyen notoriamente el impacto en comparación a los que se aplicaban cuarenta años atrás, esto es gracias a nuestra permanente incorporación de nuevas tecnologías y a nuestros planes de gestión ambiental. Los avances de la tecnología, a través de la mejora continua y de los planes de gestión ambiental, hemos logrado mitigar y controlar nuestro actual impacto.<br>
@@ -154,6 +156,9 @@
           </div>
       </footer>
   </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

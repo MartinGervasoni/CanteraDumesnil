@@ -69,6 +69,16 @@
   color: #43B741;
 }
 
+.lc__negro {
+  color: black;
+}
+
+.bg__nosotros {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #43B741 1px solid;
+  border-radius: 10px;
+}
+
 .img__carrusel {
   height: 70vh;
   -o-object-fit: cover;
@@ -88,25 +98,106 @@
   left: 15px;
   top: 9px;
   border-radius: 0px;
-  -webkit-animation-name: Logo;
-          animation-name: Logo;
+  -webkit-animation-name: logo;
+          animation-name: logo;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  z-index: 100;
 }
 
 @-webkit-keyframes logo {
+  0% {
+    position: absolute;
+    left: 12rem;
+    top: 12rem;
+    height: 232px;
+    width: 900px;
+  }
+  20% {
+    position: absolute;
+    left: 12rem;
+    top: 12rem;
+    height: 232px;
+    width: 900px;
+  }
+  25% {
+    position: absolute;
+    left: 8rem;
+    top: 8rem;
+    height: 180px;
+    width: 700px;
+  }
+  50% {
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    height: 117px;
+    width: 450px;
+  }
+  95% {
+    position: absolute;
+    left: 1rem;
+    top: 0.6rem;
+    height: 77.90px;
+    width: 300px;
+  }
   100% {
+    position: relative;
+    left: 1rem;
+    top: 0.6rem;
+    height: 77.90px;
+    width: 300px;
   }
 }
 
 @keyframes logo {
+  0% {
+    position: absolute;
+    left: 12rem;
+    top: 12rem;
+    height: 232px;
+    width: 900px;
+  }
+  20% {
+    position: absolute;
+    left: 12rem;
+    top: 12rem;
+    height: 232px;
+    width: 900px;
+  }
+  25% {
+    position: absolute;
+    left: 8rem;
+    top: 8rem;
+    height: 180px;
+    width: 700px;
+  }
+  50% {
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    height: 117px;
+    width: 450px;
+  }
+  95% {
+    position: absolute;
+    left: 1rem;
+    top: 0.6rem;
+    height: 77.90px;
+    width: 300px;
+  }
   100% {
+    position: relative;
+    left: 1rem;
+    top: 0.6rem;
+    height: 77.90px;
+    width: 300px;
   }
 }
 
@@ -156,6 +247,7 @@ nav div ul li a {
 
 nav div ul li a:hover {
   background-color: lightgray;
+  color: white;
 }
 
 .section__imagenfija__parrafo {
@@ -239,7 +331,6 @@ nav div ul li a:hover {
 
 #video_overlays {
   position: absolute !important;
-  /*background-image: linear-gradient(to right, rgba(113, 218, 72, 0.3), rgba(113, 218, 72, 0.1));*/
   z-index: 1;
   left: 0;
   right: 0;
@@ -373,16 +464,17 @@ row div {
   border-radius: 0px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   html
-.contenedor-video {
-    height: 400px;
-    background-image: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .video-home h1 {
+.video-home h1 {
     font-size: 2rem;
+  }
+  .nav__logo {
+    /* LOGO DUMESNIL */
+    height: 52px;
+    width: 200px;
+    -webkit-animation-name: none;
+            animation-name: none;
   }
 }
 

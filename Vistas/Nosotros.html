@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
@@ -20,7 +22,7 @@
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
     <img src="../Multimedia/LogoDumesnil.jpg" alt="logo de CanteraDumesnil"class="nav__logo navbar-brand">
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler br__verde" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>
     </button>
     <div class="justify-content-around collapse navbar-collapse " id="navbarNav">
@@ -29,7 +31,7 @@
           <a class="nav-link active lc__verde" aria-current="page" href="../index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link lc__verde" href="#">Nosotros</a>
+          <a class="nav-link lc__negro" href="#">Nosotros</a>
         </li>
         <li class="nav-item">
           <a class="nav-link lc__verde" href="../Vistas/Servicios.html">Servicios</a>
@@ -82,9 +84,34 @@
         </div>
      </div>
     </section>
+    <div>
+      <h1 data-aos="fade-up" data-aos-duration="1000" class="lc__verde col-md-12 m-3 text-left p-4" >NOSOTROS</h1>
+    </div>
+  <section class="container mt-4 ">
+      <div class="row justify-content-around" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-md-3 p-4 text-center bg__nosotros" data-aos="fade-right">
+            <h3>MISIÓN</h3>
+            <p>Somos una empresa familiar que distribuye superficies para el mundo del diseño y la arquitectura. Trabajamos para profesionalizar la industria y así ofrecer soluciones que aporten diseño y valor a lo largo y lo ancho del país.</p>
+        </div>
+          <div class="col-md-3 p-4 text-center bg__nosotros" data-aos="fade-right">
+            <h3 >VISIÓN</h3>
+              <p>Hacer realidad los proyectos soñados en el mundo de la arquitectura y el interiorismo, aportando vanguardia, originalidad y soluciones de alta calidad con materiales de diseño.</p>
+          </div>
+          <div class="col-md-3 p-4 text-center bg__nosotros" data-aos="fade-right">
+            <h3 >VALORES</h3>
+            <p>Innovación <br>
+              Trabajo en Equipo <br>
+              Excelencia <br>
+              Compromiso <br>
+              Honestidad</p>
+        </div>
+      </div>
+  </section>
+  
+
     <section class="container mt-5">
       <div class="row">
-        <h2>NOSOTROS</h2>
+        
           <div class="col-md-6">
             
             <p>Cantera Dumesnil es una PYME familiar con más de 38 años de trayectoria. Desde el inicio de su actividad se caracterizó por su compromiso con el entorno y la comunidad donde opera.
@@ -157,6 +184,9 @@
           </div>
       </footer>
   </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
