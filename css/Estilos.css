@@ -4,15 +4,28 @@
     box-sizing: border-box;
 }
 
+
+.bg__blanco {
+    background-color: white;
+}
+
+bg__verde {
+    background-color: #43B741;
+}
+
+.lc__verde {
+    color: #43B741;
+}
+
+.img__carrusel {
+    height: 70vh;
+    object-fit: cover;
+}
+
+
 .header {
     /* Header */
 position:fixed ;
-width: 100vw;
-height: 96px;
-flex-direction: row;
-display: inline-flex;
-z-index: 99;
-background-color: white;
 }
 .header__logo {
     /* LOGO DUMESNIL */
@@ -35,58 +48,10 @@ animation-delay: 0s;
 
 }
 
-.header__list {
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    border-radius: 0px;
-    flex-wrap: wrap;
-    font-family: Roboto;
-    align-content: center;
-    list-style:none;
-    justify-content: center;
-    left: 100px; 
-    }
-
-header div {display: inline-flex;
-}
-
-header div ul li a {
-    display: inline;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    height: 21px;
-    color: #43B741;
-    font-size: 16px;
-    line-height: 21px;
-    text-decoration: none;
-    margin: 0px 30px;
-    flex-grow: 0;
-    border-radius: 5px;
-    padding: 5px 15px;
-    transition: font-size 1ms, border 1ms;
-    border: 3px white solid;
-}
-
 header div ul li a:hover {
     border: 3px black solid;
-    
+   
  }
-
-
-.grid__padre {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 3fr;  
-    grid-template-areas: "header" "main" "footer";  
-    row-gap: 2rem;
-    }
-    
-    .header {grid-area: header;}
-    .main { grid-area: main; }
-    .footer {grid-area: footer;} 
 
 .header__list__negro {
     color: black;   
@@ -98,7 +63,6 @@ header div ul li a:hover {
     flex-direction:column;
     height: 91px;
     width: 220px;
-    left: 15%;
     top: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
@@ -120,18 +84,19 @@ text-decoration: none;
 }
 
 .whatsapp__container {
-    left: 93%;
+    left: 90%;
     background-color: #6bc047;
     border-radius: 50%;
     text-align: center;
     position: fixed;
-    bottom: 55px;
+    bottom: 65px;
     z-index: 11;
     width: 65px;
     height: 65px;
     font-size: 54px;
     padding-top: 2px;
    }
+   
 
 .fa-whatsapp {   
     content: "\f232";
@@ -161,8 +126,7 @@ border-radius: 0px;
     width: 100%;
     height: 538px;
     left: 0px;
-    top: 300px;
-       }
+    }
 
 
 .texto__titulo {
@@ -291,42 +255,23 @@ justify-content: center;
 color: #43B741;
 }
 
-.footer {
-    /* Molecula / Footer */
-    display: flex;
-    }
 
 .footer__principal {
 /* Molecula / Footer */
-display: flex;
-flex-direction: row;
-width: 100vw;
-position: relative;
-background: #FFFFFF;
+
 border-top: 2px solid #000000 ;
-top: 600px;
 }
 
-.footer__menu {
-    /* Footer / Molecula / Menu */
-flex-direction: column;
-position: relative;
-width: auto;
-height: 335px;
-left: 200px;
-top: 40px;
-font-family: Roboto;
-
-}
-
-footer div div ul li {
+.footer__lista {
 list-style:none ;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
-line-height: 35px;
+font-size: 1rem;
 display: flex;
+flex-direction: column;
+position: relative;
+width: auto;
 
 }
 
@@ -342,22 +287,19 @@ display: flex;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 32px;
+font-size: 2rem;
 line-height: 42px;
 letter-spacing: -0.01em;
-width: 300px;
+width: 30vw;
 
 }
 
 .footer__lineas {
-    /* Footer / atomo / Lineas */
-/* LÍNEAS ROTATIVAS: (0351) 153279545 / (0351) 153279549 / (0351) 155636422 / (0351) 155294995 / (0351)156316331 / (0351) 153032020 */
 
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
-line-height: 35px;
+font-size: 1rem;
 color: #000000;
 }
 
@@ -366,21 +308,14 @@ color: #000000;
     /* Footer / Atomo / INFO */
 position: relative;
 display: flex;
-width: 428px;
-height: 276px;
-left: 73px;
-top: 36px;
 }
 
 .footer__info {
     /* INFO DIRECCIÓN: Ruta E 64, X5105 Dumesnil Córdoba - Argentina EMAIL: clientes@canteradumesnil.com.ar HORARIO: Lunes a Viernes de 7 a 21 hs / Sábados de 8 a 12 hs */
-position: relative;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
-line-height: 35px;
-display: flex;
+font-size: 1rem;
 align-items: center;
 color: #000000;
 }
@@ -388,129 +323,64 @@ color: #000000;
 .footer__logo {
 height: 77.906px;
 width: 300px;
-left: 20px;
-top: 300px;
 border-radius: 0px;
-position: absolute;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 768px ) {
-    
+.contenedor-video {
+    margin: 0 auto;
+    position: relative !important;
+    width: 100%;
+    height: 100%;
 }
 
-
-@media screen and (max-width: 425px ) {
-  .header {
-    flex-direction: column;
-    position: relative ;
-    height: auto;
-      }
-
-.header__list {
-    flex-direction: column;
-    justify-content: left;
-    margin: 20px;
+.contenedor-video video {
+    z-index: -1;
+    min-width: 100%;
+    border: none;
+    display: block;
 }
-
-header div ul li {
-    padding: 10px;
-}
-
-   
-.header__contacto__boton {
-    left: 10%;  
-}
-    
-  .imagencatalogo {
-    width: 100vw;
-    }
-
-.texto__parrafos {
-    flex-direction: column;
-    padding: 5%;
-}
-.texto__parrafo1 {
-    display: inline-block;
-    left: 0px;
-}
-.texto__parrafo2 {
-    display: inline-block;
-    left: 0px;
-}
-
-.texto__titulo {
-    width: auto; 
-    height: auto; 
-    left: 0px;
-    padding: 5%;
- }
-body main div div p {
-    width: auto;
-    height: auto;
-    }
-
-.catalogo {
-    flex-direction: column;
-}    
-.tituloCatalogo {
-width: auto;
-height: auto;
-left: 10px;
-top: 550px;
-justify-content: center;
-
-}
-
-.catalogoTexto {
-   
-    position: relative;
-    width: auto;
-    height: auto;
-    left: 10px;
-    top: 600px;
-    justify-content: center;
-    padding: 5%;
-    }
-    
-.catalogoBoton {
-    top: 650px;
-    width: 150px;
-    height: auto;
-    justify-items: center;
-    }
-
-.footer__principal {
-    flex-direction: column;
-    top: 800px;
-    }
-
-
-.footer__menu {
-    /* Footer / Molecula / Menu */
-width: 192px;
-height: 335px;
-top: 36px;
-
-}
-
-
-.footer__contacto {
-    position: relative;
+#video_overlays {
+    position: absolute !important;
+    background-image: linear-gradient(to right, rgba(113, 218, 72, 0.3), rgba(113, 218, 72, 0.1));
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     display: flex;
-    flex-direction: column;
-    left: 100px;
+    justify-content: center;
+    align-items: center; }
+
+.servicios-titulo {
+    padding: 0px;
+    margin: 40px 0px 30px 0px;}
+
+.servicios-contenedor {
+    width: 100%;
+    display: contents;
+    margin-bottom: 20px;
 }
 
-.footer_box1 {
-    /* Footer / Atomo / INFO */
-left: 73px;
-top: 36px;
-}
 
-.footer__logo {
-left: 5%;
-top: 900px;
+.bloque-servicios {
+    margin-bottom: 20px;
 }
+.servicios-imagen {
+    height: 310px;
+    
+    }
+ .servicios-info {
+        height: 310px;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;}
+
+
+@media (max-width: 576px) {
+.contenedor-video {
+    height: 400px;
+    background-image:  no-repeat;
+    background-size: cover;
+    background-position: center;}
 }
